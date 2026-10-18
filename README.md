@@ -16,6 +16,8 @@ A implementação foi feita com o apoio do **ChatGPT e do Codex**, utilizando o 
 
 A aplicação faz parte de um método que construímos em família: documentar cada lição, compreender a matéria e praticar a recordação antes de consultar a resposta. O objetivo é criar uma rotina contínua, com revisões e feedback, e distribuir a preparação dos testes por sessões curtas.
 
+A minha filha complementa este trabalho com a **Escola Virtual** e com a escrita de **apontamentos e resumos no caderno**. A aplicação e o Notion fazem parte dessa rotina, em conjunto com os recursos educativos e o trabalho escrito à mão.
+
 O percurso começa nas fotografias dos apontamentos do caderno e dos exercícios do livro trabalhados na aula. Criámos uma skill personalizada — um conjunto de instruções para o assistente — que ajuda a transformar essas fotografias numa página de estudo organizada no Notion. Para cada lição, a skill orienta a criação de:
 
 1. Uma transcrição fiel dos apontamentos, assinalando passagens ilegíveis ou incertas.
@@ -92,6 +94,8 @@ Implementation was carried out with support from **ChatGPT and Codex**, using th
 ### Our study method
 
 The app is part of a method we developed as a family: document each lesson, understand the material and practise recalling it before checking the answer. The aim is to build an ongoing routine with review and feedback, and spread test preparation across short sessions.
+
+My daughter complements this work with **Escola Virtual** and by writing **notes and summaries in her notebook**. The app and Notion are part of this routine, alongside educational resources and handwritten work.
 
 The process starts with photos of notebook notes and textbook exercises covered in class. We created a custom skill — a set of instructions for the assistant — to help turn those photos into an organised study page in Notion. For each lesson, the skill guides the creation of:
 
