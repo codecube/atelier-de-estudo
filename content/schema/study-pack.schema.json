@@ -1,0 +1,204 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://atelier-estudo.local/study-pack.schema.json",
+  "title": "Pacote de estudo",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["teste", "planeamento", "temas", "resumo", "esquemas", "flashcards"],
+  "properties": {
+    "teste": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "disciplina", "titulo", "data", "dimensao", "estado"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "disciplina": { "type": "string", "minLength": 2 },
+        "titulo": { "type": "string", "minLength": 2 },
+        "data": { "type": "string", "format": "date" },
+        "dimensao": { "enum": ["pequena", "media", "grande"] },
+        "estado": { "enum": ["rascunho", "revisto", "publicado"] },
+        "demonstracao": { "type": "boolean" },
+        "descricao": { "type": "string" }
+      }
+    },
+    "planeamento": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["antecedencia", "duracao_sessao_sugerida_minutos"],
+      "properties": {
+        "antecedencia": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["minimo_dias", "maximo_dias"],
+          "properties": {
+            "minimo_dias": { "type": "integer", "minimum": 1, "maximum": 8 },
+            "maximo_dias": { "type": "integer", "minimum": 1, "maximum": 8 }
+          }
+        },
+        "duracao_sessao_sugerida_minutos": { "type": "integer", "minimum": 5, "maximum": 90 },
+        "roteiro": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "versao",
+            "pausa_minutos",
+            "tarefas"
+          ],
+          "properties": {
+            "versao": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "pausa_minutos": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "tarefas": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "titulo",
+                  "descricao",
+                  "tema",
+                  "minutos"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "titulo": {
+                    "type": "string",
+                    "minLength": 2
+                  },
+                  "descricao": {
+                    "type": "string",
+                    "minLength": 5
+                  },
+                  "tema": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "minutos": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 40
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "temas": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "nome", "peso"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "nome": { "type": "string", "minLength": 2 },
+          "peso": { "type": "integer", "minimum": 1, "maximum": 5 }
+        }
+      }
+    },
+    "resumo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["introducao", "secoes", "essencial", "alertas"],
+      "properties": {
+        "introducao": { "type": "string", "minLength": 10 },
+        "secoes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "titulo", "pontos"],
+            "properties": {
+              "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+              "titulo": { "type": "string", "minLength": 2 },
+              "pontos": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 3 } },
+              "subtitulos": {
+                "type": "array",
+                "items": {
+                  "type": "object", "additionalProperties": false,
+                  "required": ["titulo", "antes_do_ponto"],
+                  "properties": {
+                    "titulo": { "type": "string", "minLength": 2 },
+                    "antes_do_ponto": { "type": "integer", "minimum": 1 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "essencial": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 3 } },
+        "alertas": { "type": "array", "items": { "type": "string", "minLength": 3 } }
+      }
+    },
+    "esquemas": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "titulo", "tipo", "descricao", "temas", "blocos", "alternativa_textual"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "titulo": { "type": "string", "minLength": 2 },
+          "tipo": { "enum": ["conceitos", "formula", "sequencia", "comparacao"] },
+          "descricao": { "type": "string", "minLength": 5 },
+          "temas": { "type": "array", "minItems": 1, "items": { "type": "string" }, "uniqueItems": true },
+          "blocos": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["titulo", "texto"],
+              "properties": {
+                "titulo": { "type": "string", "minLength": 1 },
+                "texto": { "type": "string", "minLength": 1 },
+                "destaque": { "type": "string" }
+              }
+            }
+          },
+          "alternativa_textual": { "type": "string", "minLength": 10 }
+        }
+      }
+    },
+    "flashcards": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "tema", "pergunta", "resposta", "explicacao", "palavras_chave"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "tema": { "type": "string" },
+          "pergunta": { "type": "string", "minLength": 5 },
+          "resposta": { "type": "string", "minLength": 2 },
+          "explicacao": { "type": "string", "minLength": 5 },
+          "dificuldade": { "enum": ["facil", "media", "dificil"] },
+          "palavras_chave": {
+            "type": "array",
+            "items": { "type": "string" },
+            "uniqueItems": true
+          },
+          "fonte": { "type": "string" }
+        }
+      }
+    }
+  }
+}

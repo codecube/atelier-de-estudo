@@ -1,0 +1,623 @@
+teste:
+  id: geografia-demografia-2026-10-19
+  disciplina: Geografia
+  titulo: Demografia e evolução da população
+  data: 2026-10-19
+  dimensao: media
+  estado: rascunho
+  demonstracao: true
+  descricao: Preparação atualizada com os apontamentos e o resumo do manual enviado pela estudante em 17 de outubro de 2026, incluindo o ponto 1 da página 16 (natalidade no mundo).
+planeamento:
+  antecedencia:
+    minimo_dias: 2
+    maximo_dias: 2
+  duracao_sessao_sugerida_minutos: 25
+  roteiro:
+    versao: 1
+    pausa_minutos: 5
+    tarefas:
+      - id: tema-demografia-censos
+        titulo: Demografia, população absoluta e censos
+        descricao: "Lê o resumo e responde sem consultar: o que são demografia, PA e censos? Explica como os censos ajudam a planear escolas e hospitais."
+        tema: demografia-censos
+        minutos: 10
+      - id: tema-crescimento-populacao
+        titulo: Três fases e continentes
+        descricao: Estuda o esquema das fases. Diz os nomes, as datas (1750 e 1950) e as causas da diminuição da mortalidade. Recorda Ásia e Oceânia e pratica os flashcards.
+        tema: crescimento-populacao
+        minutos: 15
+      - id: tema-movimentos-populacao
+        titulo: Imigração, emigração e saldo migratório
+        descricao: Usa entrada/saída para distinguir os movimentos. Resolve o cartão com 18 000 imigrantes e 12 500 emigrantes e explica os sinais positivo, negativo e nulo.
+        tema: movimentos-populacao
+        minutos: 10
+      - id: calculos-crescimento
+        titulo: Praticar CN, SM e CE
+        descricao: Sem consultar, escreve CN = N − M, SM = I − E e CE = CN + SM. Resolve os cartões com CN negativo e o exercício com N = 1200, M = 900, I = 500 e E = 200. Corrige e repete os erros.
+        tema: crescimento-populacao
+        minutos: 15
+      - id: tema-taxas-demograficas
+        titulo: Calcular TBN, TBM e TCN
+        descricao: Estuda as três fórmulas. Resolve os cartões com PA = 100 000 e os casos de TCN negativa e nula. Escreve sempre ‰ nas taxas e pessoas em CN, SM e CE.
+        tema: taxas-demograficas
+        minutos: 15
+      - id: tema-natalidade-mundo
+        titulo: Natalidade elevada e reduzida
+        descricao: Observa o esquema da página 16, ponto 1. Diz sem consultar as cinco causas de natalidade reduzida e as cinco de natalidade elevada. Recorda a tendência de diminuição no mundo.
+        tema: natalidade-mundo
+        minutos: 10
+      - id: tema-contrastes-demograficos
+        titulo: Comparar Portugal e Angola
+        descricao: Compara natalidade, crescimento natural e esperança média de vida nos países desenvolvidos e em desenvolvimento. Pratica os cartões e explica que são tendências gerais.
+        tema: contrastes-demograficos
+        minutos: 10
+      - id: revisao-final
+        titulo: Revisão final sem consultar
+        descricao: Revê os flashcards marcados «Ainda não sei» e «Quase». Escreve as seis fórmulas, explica as três fases e as causas da natalidade. Confirma as unidades, os censos e os continentes; corrige os erros.
+        tema: null
+        minutos: 15
+temas:
+  - id: demografia-censos
+    nome: Demografia e censos
+    peso: 2
+  - id: movimentos-populacao
+    nome: Movimentos da população
+    peso: 4
+  - id: crescimento-populacao
+    nome: Crescimento da população
+    peso: 5
+  - id: contrastes-demograficos
+    nome: Contrastes demográficos
+    peso: 4
+  - id: taxas-demograficas
+    nome: Taxas demográficas
+    peso: 5
+  - id: natalidade-mundo
+    nome: Natalidade no mundo
+    peso: 4
+resumo:
+  introducao: A demografia ajuda-nos a perceber quantas pessoas vivem num território, como a população muda, como se distribui e como se organiza por idades.
+  secoes:
+    - id: demografia-censos
+      titulo: Demografia e censos
+      pontos:
+        - A demografia estuda a evolução, a estrutura etária e a distribuição da população.
+        - Os censos são um inquérito geral à população e às habitações.
+        - Realizam-se normalmente de dez em dez anos; os últimos referidos nos apontamentos portugueses foram em 2021.
+        - População absoluta (PA) é o número total de habitantes de um território.
+        - Os censos ajudam a planear escolas, hospitais e outras infraestruturas.
+    - id: movimentos-populacao
+      titulo: Movimentos da população
+      pontos:
+        - Imigração é a entrada de pessoas num país para aí residirem.
+        - Emigração é a saída de pessoas de um país para viverem noutro.
+        - "Saldo migratório: SM = I − E. É positivo quando entram mais pessoas do que saem, negativo no caso contrário e nulo quando os valores são iguais."
+    - id: crescimento-populacao
+      titulo: Crescimento da população
+      subtitulos:
+        - titulo: Como calcular o crescimento da população
+          antes_do_ponto: 1
+        - titulo: Evolução da população mundial
+          antes_do_ponto: 5
+      pontos:
+        - "Crescimento natural: CN = N − M, ou seja, nascimentos menos mortes."
+        - "Crescimento efetivo: CE = CN + SM, ou também CE = N − M + I − E."
+        - Natalidade (N) é o número de nascimentos num ano; mortalidade (M) é o número de mortes num ano.
+        - CN, SM e CE positivos indicam aumento; negativos indicam diminuição; nulos indicam ausência de variação na componente considerada.
+        - "Regime demográfico primitivo (até 1750): crescimento muito lento, natalidade e mortalidade elevadas; guerras, fomes e epidemias mantinham a mortalidade elevada."
+        - "Revolução demográfica (a partir de 1750): crescimento mais rápido com a diminuição da mortalidade, graças às revoluções Industrial e Agrícola e a melhorias na alimentação, higiene e medicina."
+        - "Expansão demográfica (a partir de 1950): crescimento muito acelerado com os avanços médicos, a vacinação e a diminuição da mortalidade, sobretudo nos países em desenvolvimento."
+        - No resumo para o teste, a Ásia é o continente mais populoso e a Oceânia o menos populoso.
+    - id: contrastes-demograficos
+      titulo: Contrastes demográficos
+      pontos:
+        - Nos países desenvolvidos, como Portugal, a natalidade é geralmente baixa, o crescimento natural é reduzido ou negativo e a esperança média de vida é elevada.
+        - Nos países em desenvolvimento, como Angola, a natalidade e o crescimento natural são geralmente mais elevados e a esperança média de vida é geralmente inferior.
+        - São tendências gerais; existem diferenças entre países.
+    - id: taxas-demograficas
+      titulo: Taxas demográficas e unidades
+      pontos:
+        - "Taxa bruta de natalidade: TBN = (N ÷ PA) × 1000."
+        - "Taxa bruta de mortalidade: TBM = (M ÷ PA) × 1000."
+        - "Taxa de crescimento natural: TCN = TBN − TBM."
+        - "PA significa população absoluta. As taxas exprimem-se em ‰ (por mil): 12‰ corresponde a 12 por cada 1000 habitantes."
+        - "Exemplo: PA = 100 000, N = 1200 e M = 900. TBN = 12‰, TBM = 9‰, TCN = 3‰ e CN = 300 pessoas."
+    - id: natalidade-mundo
+      titulo: Natalidade no mundo — página 16, ponto 1
+      pontos:
+        - "Natalidade reduzida: maior escolaridade das mulheres, maior utilização de contracetivos, planeamento familiar, casamentos mais tardios e despesas elevadas com os filhos."
+        - "Natalidade elevada: menor escolaridade, pouco acesso a contracetivos, casamentos precoces, filhos como fonte de rendimento e tradições culturais e religiosas."
+        - A natalidade tem vindo a diminuir no mundo, embora existam diferenças entre países.
+  essencial:
+    - Saber distinguir imigração de emigração.
+    - Saber calcular e classificar o saldo migratório.
+    - Saber calcular o crescimento natural e o crescimento efetivo.
+    - Saber ordenar e explicar as três fases da evolução da população mundial.
+    - Saber comparar as tendências dos países desenvolvidos e em desenvolvimento.
+    - Definir população absoluta, natalidade e mortalidade e explicar a utilidade dos censos.
+    - Calcular TBN, TBM e TCN, distinguindo pessoas de ‰.
+    - Associar as fases a 1750 e 1950 e explicar a diminuição da mortalidade.
+    - Identificar Ásia e Oceânia como os continentes mais e menos populosos referidos no resumo.
+    - Explicar as cinco causas da natalidade reduzida e as cinco causas da natalidade elevada.
+  alertas:
+    - Matéria atualizada a partir do resumo enviado pela estudante; as páginas originais do manual não foram consultadas nesta revisão.
+    - CN, SM e CE exprimem-se em pessoas; TBN, TBM e TCN exprimem-se em ‰ (por mil).
+esquemas:
+  - id: mapa-demografia
+    titulo: O que estuda a demografia?
+    tipo: conceitos
+    descricao: Três perspetivas para conhecer uma população.
+    temas:
+      - demografia-censos
+    blocos:
+      - titulo: Evolução
+        texto: Como aumenta ou diminui ao longo do tempo.
+        destaque: tempo
+      - titulo: Estrutura etária
+        texto: Como se organiza por grupos de idade.
+        destaque: idades
+      - titulo: Distribuição
+        texto: Onde vive no território.
+        destaque: espaço
+    alternativa_textual: A demografia estuda a evolução da população no tempo, a sua organização por idades e a sua distribuição no território.
+  - id: formulas-populacao
+    titulo: A planta dos indicadores
+    tipo: formula
+    descricao: Dos dados básicos até à variação real da população.
+    temas:
+      - movimentos-populacao
+      - crescimento-populacao
+    blocos:
+      - titulo: Crescimento natural
+        texto: Nascimentos − Mortes
+        destaque: CN = N − M
+      - titulo: Saldo migratório
+        texto: Imigração − Emigração
+        destaque: SM = I − E
+      - titulo: Crescimento efetivo
+        texto: Crescimento natural + Saldo migratório
+        destaque: CE = CN + SM
+    alternativa_textual: Subtrai as mortes aos nascimentos para obter o crescimento natural; subtrai a emigração à imigração para obter o saldo migratório; soma ambos para obter o crescimento efetivo.
+  - id: fases-populacao
+    titulo: Evolução da população mundial
+    tipo: sequencia
+    descricao: Três fases gerais, apresentadas por ordem.
+    temas:
+      - crescimento-populacao
+    blocos:
+      - titulo: 1. Regime demográfico primitivo — até 1750
+        texto: Natalidade e mortalidade elevadas; guerras, fomes e epidemias.
+        destaque: Crescimento muito lento
+      - titulo: 2. Revolução demográfica — a partir de 1750
+        texto: Revoluções Industrial e Agrícola; melhor alimentação, higiene e medicina; mortalidade diminui.
+        destaque: Crescimento mais rápido
+      - titulo: 3. Expansão demográfica — a partir de 1950
+        texto: Avanços médicos e vacinação; mortalidade diminui sobretudo nos países em desenvolvimento.
+        destaque: Crescimento muito acelerado
+    alternativa_textual: "1. Regime demográfico primitivo — até 1750: Natalidade e mortalidade elevadas; guerras, fomes e epidemias. Crescimento muito lento. 2. Revolução demográfica — a partir de 1750: Revoluções Industrial e Agrícola; melhor alimentação, higiene e medicina; mortalidade diminui. Crescimento mais rápido. 3. Expansão demográfica — a partir de 1950: Avanços médicos e vacinação; mortalidade diminui sobretudo nos países em desenvolvimento. Crescimento muito acelerado."
+  - id: comparar-paises
+    titulo: Dois comportamentos demográficos
+    tipo: comparacao
+    descricao: Tendências gerais que não eliminam as diferenças entre países.
+    temas:
+      - contrastes-demograficos
+    blocos:
+      - titulo: Países desenvolvidos — Portugal
+        texto: Natalidade baixa; crescimento natural baixo ou negativo; esperança média de vida elevada.
+        destaque: Tendência geral
+      - titulo: Países em desenvolvimento — Angola
+        texto: Natalidade geralmente elevada; crescimento natural geralmente elevado; esperança média de vida geralmente inferior.
+        destaque: Existem diferenças entre países
+    alternativa_textual: "Países desenvolvidos — Portugal: Natalidade baixa; crescimento natural baixo ou negativo; esperança média de vida elevada. Países em desenvolvimento — Angola: Natalidade geralmente elevada; crescimento natural geralmente elevado; esperança média de vida geralmente inferior."
+  - id: taxas-demograficas
+    titulo: Calcular as taxas
+    tipo: formula
+    temas:
+      - taxas-demograficas
+    descricao: Matéria do resumo enviado para o teste.
+    blocos:
+      - titulo: Natalidade
+        texto: Nascimentos ÷ população absoluta × 1000
+        destaque: TBN = N ÷ PA × 1000
+      - titulo: Mortalidade
+        texto: Mortes ÷ população absoluta × 1000
+        destaque: TBM = M ÷ PA × 1000
+      - titulo: Crescimento natural
+        texto: Taxa de natalidade − taxa de mortalidade
+        destaque: TCN = TBN − TBM
+      - titulo: Unidades
+        texto: Taxas em ‰; CN, SM e CE em pessoas
+        destaque: ‰ = por mil
+    alternativa_textual: "Natalidade: Nascimentos ÷ população absoluta × 1000: TBN = N ÷ PA × 1000 Mortalidade: Mortes ÷ população absoluta × 1000: TBM = M ÷ PA × 1000 Crescimento natural: Taxa de natalidade − taxa de mortalidade: TCN = TBN − TBM Unidades: Taxas em ‰; CN, SM e CE em pessoas: ‰ = por mil"
+  - id: causas-natalidade
+    titulo: Porque varia a natalidade?
+    tipo: comparacao
+    temas:
+      - natalidade-mundo
+    descricao: Matéria do resumo enviado para o teste.
+    blocos:
+      - titulo: Natalidade reduzida
+        texto: Maior escolaridade das mulheres; contracetivos; planeamento familiar; casamentos tardios; despesas com os filhos.
+        destaque: Mais comum nos países desenvolvidos
+      - titulo: Natalidade elevada
+        texto: Menor escolaridade; pouco acesso a contracetivos; casamentos precoces; filhos como rendimento; tradições culturais e religiosas.
+        destaque: Mais comum nos países em desenvolvimento
+    alternativa_textual: "Natalidade reduzida: Maior escolaridade das mulheres; contracetivos; planeamento familiar; casamentos tardios; despesas com os filhos.: Mais comum nos países desenvolvidos Natalidade elevada: Menor escolaridade; pouco acesso a contracetivos; casamentos precoces; filhos como rendimento; tradições culturais e religiosas.: Mais comum nos países em desenvolvimento"
+flashcards:
+  - id: geo-demografia-01
+    tema: demografia-censos
+    pergunta: O que é a demografia?
+    resposta: É a ciência que estuda as características da população.
+    explicacao: A demografia analisa a evolução da população, a sua estrutura etária e a sua distribuição pelo território.
+    dificuldade: facil
+    palavras_chave:
+      - demografia
+      - população
+    fonte: Referência de estudo (exemplo público)
+  - id: geo-demografia-02
+    tema: demografia-censos
+    pergunta: Que três características da população são estudadas pela demografia?
+    resposta: A evolução, a estrutura etária e a distribuição.
+    explicacao: A evolução mostra como a população muda, a estrutura etária organiza-a por idades e a distribuição indica onde vive.
+    dificuldade: media
+    palavras_chave:
+      - evolução
+      - estrutura etária
+      - distribuição
+    fonte: Referência de estudo (exemplo público)
+  - id: geo-demografia-03
+    tema: demografia-censos
+    pergunta: O que são os censos?
+    resposta: São um inquérito geral à população e às habitações de um país.
+    explicacao: Os censos recolhem informação que permite conhecer as características da população e apoiar decisões sobre o território.
+    dificuldade: facil
+    palavras_chave:
+      - censos
+      - recenseamento
+    fonte: Referência de estudo (exemplo público)
+  - id: geo-demografia-04
+    tema: demografia-censos
+    pergunta: Com que frequência se realizam os censos e em que ano ocorreram os últimos referidos nos apontamentos?
+    resposta: Realizam-se de dez em dez anos; os últimos referidos foram em 2021.
+    explicacao: O recenseamento periódico permite comparar a população em diferentes momentos.
+    dificuldade: facil
+    palavras_chave:
+      - dez anos
+      - "2021"
+    fonte: Referência de estudo (exemplo público)
+  - id: geo-demografia-05
+    tema: movimentos-populacao
+    pergunta: O que é a imigração?
+    resposta: É a entrada de pessoas num país para aí residirem.
+    explicacao: Para o país de destino, a pessoa que entra para viver é um imigrante.
+    dificuldade: facil
+    palavras_chave:
+      - imigração
+      - entrada
+    fonte: Referência de estudo (exemplo público)
+  - id: geo-demografia-06
+    tema: movimentos-populacao
+    pergunta: O que é a emigração?
+    resposta: É a saída de pessoas de um país para viverem noutro.
+    explicacao: Para o país de origem, a pessoa que sai para viver noutro país é um emigrante.
+    dificuldade: facil
+    palavras_chave:
+      - emigração
+      - saída
+    fonte: Referência de estudo (exemplo público)
+  - id: geo-demografia-07
+    tema: movimentos-populacao
+    pergunta: Como se calcula o saldo migratório?
+    resposta: SM = I − E, ou seja, imigração menos emigração.
+    explicacao: O saldo migratório compara o número de pessoas que entram com o número de pessoas que saem.
+    dificuldade: media
+    palavras_chave:
+      - saldo migratório
+      - fórmula
+      - SM
+    fonte: Referência de estudo (exemplo público)
+  - id: geo-demografia-08
+    tema: movimentos-populacao
+    pergunta: Quando é que o saldo migratório é positivo, negativo ou nulo?
+    resposta: É positivo se I > E, negativo se I < E e nulo se I = E.
+    explicacao: O sinal indica se as entradas superam as saídas, se acontece o contrário ou se os valores são iguais.
+    dificuldade: media
+    palavras_chave:
+      - saldo positivo
+      - saldo negativo
+      - saldo nulo
+    fonte: Referência de estudo (exemplo público)
+  - id: geo-demografia-09
+    tema: movimentos-populacao
+    pergunta: Num país entraram 18 000 imigrantes e saíram 12 500 emigrantes. Qual é o saldo migratório?
+    resposta: +5 500 pessoas; o saldo migratório é positivo.
+    explicacao: "Aplica-se SM = I − E: 18 000 − 12 500 = 5 500. Como o resultado é superior a zero, é positivo."
+    dificuldade: media
+    palavras_chave:
+      - cálculo
+      - saldo migratório
+    fonte: Referência de estudo (exemplo público)
+  - id: geo-demografia-10
+    tema: crescimento-populacao
+    pergunta: Como se calcula o crescimento natural?
+    resposta: CN = N − M, ou seja, nascimentos menos mortes.
+    explicacao: O crescimento natural considera apenas os nascimentos e as mortes, sem incluir movimentos migratórios.
+    dificuldade: media
+    palavras_chave:
+      - crescimento natural
+      - nascimentos
+      - mortes
+    fonte: Referência de estudo (exemplo público)
+  - id: geo-demografia-11
+    tema: crescimento-populacao
+    pergunta: O que é o crescimento efetivo?
+    resposta: É a variação real da população entre dois momentos.
+    explicacao: Junta o crescimento natural ao saldo migratório e inclui, por isso, nascimentos, mortes, imigração e emigração.
+    dificuldade: media
+    palavras_chave:
+      - crescimento efetivo
+      - população
+    fonte: Referência de estudo (exemplo público)
+  - id: geo-demografia-12
+    tema: crescimento-populacao
+    pergunta: Que fórmulas permitem calcular o crescimento efetivo?
+    resposta: CE = CN + SM ou CE = N − M + I − E.
+    explicacao: "As duas fórmulas são equivalentes: a segunda desenvolve o crescimento natural e o saldo migratório."
+    dificuldade: dificil
+    palavras_chave:
+      - crescimento efetivo
+      - fórmula
+      - CE
+    fonte: Referência de estudo (exemplo público)
+  - id: geo-demografia-13
+    tema: crescimento-populacao
+    pergunta: Se o crescimento natural for −2 000 e o saldo migratório for +5 500, qual é o crescimento efetivo?
+    resposta: +3 500 pessoas.
+    explicacao: CE = CN + SM, logo −2 000 + 5 500 = +3 500. A população aumentou.
+    dificuldade: dificil
+    palavras_chave:
+      - cálculo
+      - crescimento efetivo
+    fonte: Referência de estudo (exemplo público)
+  - id: geo-demografia-14
+    tema: crescimento-populacao
+    pergunta: Quais são as três fases da evolução da população mundial e as suas datas?
+    resposta: Regime demográfico primitivo (até 1750), revolução demográfica (a partir de 1750) e expansão demográfica (a partir de 1950).
+    explicacao: O crescimento passa de muito lento a mais rápido e depois a muito acelerado, segundo a divisão do resumo para o teste.
+    dificuldade: media
+    palavras_chave:
+      - população mundial
+      - fases
+      - explosão demográfica
+    fonte: Resumo do manual enviado pela estudante em 17/10/2026.
+  - id: geo-demografia-15
+    tema: crescimento-populacao
+    pergunta: Porque crescia lentamente a população mundial durante a primeira fase?
+    resposta: Porque a natalidade e a mortalidade eram ambas elevadas.
+    explicacao: Havia muitos nascimentos, mas também muitas mortes, pelo que o aumento total da população era reduzido.
+    dificuldade: media
+    palavras_chave:
+      - crescimento lento
+      - natalidade
+      - mortalidade
+    fonte: Referência de estudo (exemplo público)
+  - id: geo-demografia-16
+    tema: crescimento-populacao
+    pergunta: O que provocou a fase de rápido crescimento da população mundial?
+    resposta: A diminuição da mortalidade enquanto a natalidade se mantinha elevada.
+    explicacao: Com menos mortes e muitos nascimentos, o crescimento natural aumentou, originando a explosão demográfica.
+    dificuldade: dificil
+    palavras_chave:
+      - explosão demográfica
+      - mortalidade
+    fonte: Referência de estudo (exemplo público)
+  - id: geo-demografia-17
+    tema: contrastes-demograficos
+    pergunta: Que tendências demográficas gerais caracterizam os países desenvolvidos?
+    resposta: Natalidade baixa, esperança média de vida elevada, crescimento natural reduzido ou negativo e envelhecimento da população.
+    explicacao: Estas são tendências gerais apresentadas nos apontamentos; podem existir diferenças entre países.
+    dificuldade: media
+    palavras_chave:
+      - países desenvolvidos
+      - envelhecimento
+    fonte: Referência de estudo (exemplo público)
+  - id: geo-demografia-18
+    tema: contrastes-demograficos
+    pergunta: Que tendências demográficas gerais caracterizam os países em desenvolvimento?
+    resposta: Natalidade muitas vezes mais elevada, mortalidade em diminuição, maior crescimento natural e população mais jovem.
+    explicacao: Estas são tendências gerais e não descrevem todos os países da mesma forma.
+    dificuldade: media
+    palavras_chave:
+      - países em desenvolvimento
+      - população jovem
+    fonte: Referência de estudo (exemplo público)
+  - id: geo-demografia-19
+    tema: contrastes-demograficos
+    pergunta: Um país tem natalidade baixa, esperança média de vida elevada e muitos idosos. Em que grupo se enquadra melhor?
+    resposta: Nos países desenvolvidos.
+    explicacao: A combinação de baixa natalidade, elevada esperança média de vida e população envelhecida corresponde à tendência geral indicada para países desenvolvidos.
+    dificuldade: media
+    palavras_chave:
+      - classificação
+      - estrutura etária
+    fonte: Referência de estudo (exemplo público)
+  - id: geo-demografia-20
+    tema: demografia-censos
+    pergunta: O que é a população absoluta (PA)?
+    resposta: É o número total de habitantes de um território.
+    explicacao: PA é o valor usado no denominador das fórmulas TBN e TBM.
+    dificuldade: facil
+    palavras_chave:
+      - demografia-censos
+    fonte: Resumo do manual enviado pela estudante em 17/10/2026.
+  - id: geo-demografia-21
+    tema: demografia-censos
+    pergunta: Para que servem os censos?
+    resposta: Para conhecer a população e planear escolas, hospitais e outras infraestruturas.
+    explicacao: Conhecer quantas pessoas vivem num território ajuda a prever as suas necessidades.
+    dificuldade: facil
+    palavras_chave:
+      - demografia-censos
+    fonte: Resumo do manual enviado pela estudante em 17/10/2026.
+  - id: geo-demografia-22
+    tema: crescimento-populacao
+    pergunta: O que são natalidade (N) e mortalidade (M)?
+    resposta: N é o número de nascimentos e M o número de mortes num ano.
+    explicacao: São números de acontecimentos, diferentes das taxas por mil habitantes.
+    dificuldade: facil
+    palavras_chave:
+      - crescimento-populacao
+    fonte: Resumo do manual enviado pela estudante em 17/10/2026.
+  - id: geo-demografia-23
+    tema: crescimento-populacao
+    pergunta: Porque era elevada a mortalidade no regime demográfico primitivo?
+    resposta: Devido a guerras, fomes e epidemias.
+    explicacao: Até 1750, a mortalidade elevada compensava grande parte dos nascimentos.
+    dificuldade: media
+    palavras_chave:
+      - crescimento-populacao
+    fonte: Resumo do manual enviado pela estudante em 17/10/2026.
+  - id: geo-demografia-24
+    tema: crescimento-populacao
+    pergunta: O que fez diminuir a mortalidade a partir de 1750?
+    resposta: As revoluções Industrial e Agrícola e as melhorias na alimentação, higiene e medicina.
+    explicacao: A diminuição da mortalidade permitiu um crescimento mais rápido na revolução demográfica.
+    dificuldade: media
+    palavras_chave:
+      - crescimento-populacao
+    fonte: Resumo do manual enviado pela estudante em 17/10/2026.
+  - id: geo-demografia-25
+    tema: crescimento-populacao
+    pergunta: O que caracteriza a expansão demográfica a partir de 1950?
+    resposta: Crescimento muito acelerado, com avanços médicos, vacinação e redução da mortalidade.
+    explicacao: A mortalidade diminuiu sobretudo nos países em desenvolvimento.
+    dificuldade: media
+    palavras_chave:
+      - crescimento-populacao
+    fonte: Resumo do manual enviado pela estudante em 17/10/2026.
+  - id: geo-demografia-26
+    tema: crescimento-populacao
+    pergunta: Quais são os continentes mais e menos populosos referidos no resumo?
+    resposta: "Mais populoso: Ásia. Menos populoso: Oceânia."
+    explicacao: Memoriza os dois extremos apresentados na matéria do teste.
+    dificuldade: facil
+    palavras_chave:
+      - crescimento-populacao
+    fonte: Resumo do manual enviado pela estudante em 17/10/2026.
+  - id: geo-demografia-27
+    tema: taxas-demograficas
+    pergunta: Como se calcula a taxa bruta de natalidade?
+    resposta: TBN = (N ÷ PA) × 1000.
+    explicacao: Divide os nascimentos pela população absoluta e multiplica por 1000; o resultado é em ‰.
+    dificuldade: media
+    palavras_chave:
+      - taxas-demograficas
+    fonte: Resumo do manual enviado pela estudante em 17/10/2026.
+  - id: geo-demografia-28
+    tema: taxas-demograficas
+    pergunta: Como se calcula a taxa bruta de mortalidade?
+    resposta: TBM = (M ÷ PA) × 1000.
+    explicacao: Divide as mortes pela população absoluta e multiplica por 1000; o resultado é em ‰.
+    dificuldade: media
+    palavras_chave:
+      - taxas-demograficas
+    fonte: Resumo do manual enviado pela estudante em 17/10/2026.
+  - id: geo-demografia-29
+    tema: taxas-demograficas
+    pergunta: Como se calcula a taxa de crescimento natural?
+    resposta: TCN = TBN − TBM.
+    explicacao: Subtrai a taxa de mortalidade à taxa de natalidade; o resultado é em ‰.
+    dificuldade: media
+    palavras_chave:
+      - taxas-demograficas
+    fonte: Resumo do manual enviado pela estudante em 17/10/2026.
+  - id: geo-demografia-30
+    tema: taxas-demograficas
+    pergunta: Qual é a diferença entre 300 pessoas e 3‰?
+    resposta: 300 pessoas é um valor absoluto; 3‰ significa 3 por cada 1000 habitantes.
+    explicacao: CN, SM e CE medem pessoas. TBN, TBM e TCN são taxas por mil.
+    dificuldade: media
+    palavras_chave:
+      - taxas-demograficas
+    fonte: Resumo do manual enviado pela estudante em 17/10/2026.
+  - id: geo-demografia-31
+    tema: taxas-demograficas
+    pergunta: Com PA = 100 000 e N = 1200, calcula a TBN.
+    resposta: 12‰.
+    explicacao: TBN = (1200 ÷ 100 000) × 1000 = 12‰.
+    dificuldade: media
+    palavras_chave:
+      - taxas-demograficas
+    fonte: Resumo do manual enviado pela estudante em 17/10/2026.
+  - id: geo-demografia-32
+    tema: taxas-demograficas
+    pergunta: Com PA = 100 000 e M = 900, calcula a TBM.
+    resposta: 9‰.
+    explicacao: TBM = (900 ÷ 100 000) × 1000 = 9‰.
+    dificuldade: media
+    palavras_chave:
+      - taxas-demograficas
+    fonte: Resumo do manual enviado pela estudante em 17/10/2026.
+  - id: geo-demografia-33
+    tema: taxas-demograficas
+    pergunta: Se TBN = 8‰ e TBM = 11‰, qual é a TCN e o que significa?
+    resposta: −3‰; o crescimento natural é negativo.
+    explicacao: "TCN = 8 − 11 = −3‰: há mais mortes do que nascimentos. As migrações ainda podem alterar o crescimento efetivo."
+    dificuldade: dificil
+    palavras_chave:
+      - taxas-demograficas
+    fonte: Resumo do manual enviado pela estudante em 17/10/2026.
+  - id: geo-demografia-34
+    tema: taxas-demograficas
+    pergunta: Se TBN = TBM = 10‰, qual é a TCN?
+    resposta: 0‰; o crescimento natural é nulo.
+    explicacao: Há tantos nascimentos como mortes. Isto não determina o saldo migratório.
+    dificuldade: media
+    palavras_chave:
+      - taxas-demograficas
+    fonte: Resumo do manual enviado pela estudante em 17/10/2026.
+  - id: geo-demografia-35
+    tema: natalidade-mundo
+    pergunta: Quais são as cinco causas da natalidade reduzida?
+    resposta: Maior escolaridade das mulheres; contracetivos; planeamento familiar; casamentos tardios; despesas elevadas com os filhos.
+    explicacao: São causas associadas à natalidade geralmente baixa nos países desenvolvidos.
+    dificuldade: media
+    palavras_chave:
+      - natalidade-mundo
+    fonte: Resumo do manual enviado pela estudante em 17/10/2026.
+  - id: geo-demografia-36
+    tema: natalidade-mundo
+    pergunta: Quais são as cinco causas da natalidade elevada?
+    resposta: Menor escolaridade; pouco acesso a contracetivos; casamentos precoces; filhos como rendimento; tradições culturais e religiosas.
+    explicacao: São causas associadas à natalidade geralmente mais elevada nos países em desenvolvimento.
+    dificuldade: media
+    palavras_chave:
+      - natalidade-mundo
+    fonte: Resumo do manual enviado pela estudante em 17/10/2026.
+  - id: geo-demografia-37
+    tema: natalidade-mundo
+    pergunta: Qual tem sido a tendência da natalidade no mundo?
+    resposta: Tem vindo a diminuir.
+    explicacao: A tendência global não elimina as diferenças entre países.
+    dificuldade: facil
+    palavras_chave:
+      - natalidade-mundo
+    fonte: Resumo do manual enviado pela estudante em 17/10/2026.
+  - id: geo-demografia-38
+    tema: contrastes-demograficos
+    pergunta: Como varia geralmente a esperança média de vida entre os dois grupos de países?
+    resposta: É elevada nos países desenvolvidos e geralmente inferior nos países em desenvolvimento.
+    explicacao: Portugal e Angola são os exemplos apresentados no resumo.
+    dificuldade: media
+    palavras_chave:
+      - contrastes-demograficos
+    fonte: Resumo do manual enviado pela estudante em 17/10/2026.
+  - id: geo-demografia-39
+    tema: crescimento-populacao
+    pergunta: Com N = 1200, M = 900, I = 500 e E = 200, calcula CN, SM e CE.
+    resposta: CN = 300 pessoas; SM = 300 pessoas; CE = 600 pessoas.
+    explicacao: CN = 1200 − 900; SM = 500 − 200; CE = 300 + 300. A população aumentou 600 pessoas.
+    dificuldade: dificil
+    palavras_chave:
+      - crescimento-populacao
+    fonte: Resumo do manual enviado pela estudante em 17/10/2026.
