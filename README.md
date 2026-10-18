@@ -6,6 +6,12 @@
 
 O **Atelier de Estudo** é uma aplicação de apoio ao estudo criada por mim e pela minha filha. É um projeto de família para tornar a preparação dos testes mais organizada, visual e participativa.
 
+### Como criámos a aplicação
+
+Começámos por uma fase de planeamento: definimos as funcionalidades, dividimos o desenvolvimento em fases e guardámos a especificação num ficheiro. A [especificação do produto](ESPECIFICACAO.md) serviu de referência para orientar a implementação e acompanhar o que faltava construir.
+
+A implementação foi feita com o apoio do **ChatGPT e do Codex**, utilizando o modelo **GPT-6.1 Sol**. Fomos construindo e revendo a aplicação por fases, a partir das necessidades de estudo que identificámos em família.
+
 ### O nosso método de estudo
 
 A aplicação faz parte de um método que construímos em família: documentar cada lição, compreender a matéria e praticar a recordação antes de consultar a resposta. O objetivo é criar uma rotina contínua, com revisões e feedback, e distribuir a preparação dos testes por sessões curtas.
@@ -33,6 +39,14 @@ O Notion serve de arquivo das lições e a aplicação apoia a prática e a prep
 - Temporizador para apoiar as sessões de estudo.
 
 A interface está em português. O repositório inclui um pacote de demonstração de Geografia sobre demografia e evolução da população.
+
+### Usar com o Codex e o ChatGPT Sites
+
+Se tiveres o **Codex com o plugin Sites disponível**, não precisas de executar os comandos manualmente. Basta dar ao Codex acesso a este repositório e pedir, por exemplo:
+
+> Usa este repositório para preparar e correr a aplicação no ChatGPT Sites. Instala as dependências, valida a compilação e publica uma cópia privada para eu experimentar.
+
+O Codex pode tratar da preparação e publicação através do Sites. A alternativa abaixo permite executar a aplicação localmente.
 
 ### Executar localmente
 
@@ -69,6 +83,12 @@ Não incluas chaves, credenciais ou dados pessoais nos ficheiros publicados.
 
 **Atelier de Estudo** is a study app created by me and my daughter. It is a family project that aims to make preparing for tests more organised, visual and collaborative.
 
+### How we built the app
+
+We started with a planning phase: we defined the features, divided development into phases and saved the specification in a file. The [product specification](ESPECIFICACAO.md), written in Portuguese, served as a reference for implementation and for tracking what still needed to be built.
+
+Implementation was carried out with support from **ChatGPT and Codex**, using the **GPT-6.1 Sol** model. We built and reviewed the app in phases, guided by the study needs we identified as a family.
+
 ### Our study method
 
 The app is part of a method we developed as a family: document each lesson, understand the material and practise recalling it before checking the answer. The aim is to build an ongoing routine with review and feedback, and spread test preparation across short sessions.
@@ -96,6 +116,14 @@ Notion acts as the lesson archive, while the app supports practice and test prep
 - A timer to support study sessions.
 
 The interface is in Portuguese. The repository includes a sample Geography study pack covering demography and population change.
+
+### Use with Codex and ChatGPT Sites
+
+If you have **Codex with the Sites plugin available**, you do not need to run the commands manually. Give Codex access to this repository and ask, for example:
+
+> Use this repository to prepare and run the app on ChatGPT Sites. Install the dependencies, validate the build and publish a private copy for me to try.
+
+Codex can handle preparation and publication through Sites. The alternative below lets you run the app locally.
 
 ### Run locally
 
